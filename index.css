@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'Bitcount Grid Double';
+}
+
+.nav {
+  color: aquamarine;
+  border: 2px solid #ff04b4;
+}
+
+.nav__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  margin: 0;
+}
+
+.nav__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 2.5vh;
+  padding: 1.5vh 1.5vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-decoration: none;
+  color: plum;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: plum;
+}
+
+.main {
+  background-color: black;
+  color: plum;
+}
+
+.main__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__text {
+  font-size: xx-large;
+  -webkit-animation: left 3s  ease-out;
+          animation: left 3s  ease-out;
+}
+
+.main__btn {
+  text-decoration: none;
+  color: #f66868;
+  border: 2px solid plum;
+  background-color: #3d3d3d;
+  margin-bottom: 1.5vh;
+  padding: 1vw 1vh;
+  border-radius: 10%;
+  -webkit-animation: fadeInUp 5s ease-out forwards;
+          animation: fadeInUp 5s ease-out forwards;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes left {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+    color: red;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+    color: red;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */
