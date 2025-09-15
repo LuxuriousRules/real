@@ -35,6 +35,12 @@ body {
 .nav__item {
   text-decoration: none;
   color: plum;
+  -webkit-transition: background 3s ease;
+  transition: background 3s ease;
+}
+
+.nav__item:hover:active {
+  color: red;
 }
 
 .main {
@@ -125,5 +131,40 @@ body {
             transform: translateX(0);
     opacity: 1;
   }
+}
+
+.question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5vh;
+}
+
+.question__item {
+  -webkit-transition: background 3s ease;
+  transition: background 3s ease;
+}
+
+.question__item:hover:active {
+  color: red;
+}
+
+.question__faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.question__faq-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=index.css.map */

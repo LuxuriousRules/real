@@ -10,7 +10,7 @@ body{
 
 .nav {
   color: aquamarine;
-  border: 2px solid rgb(255, 4, 180);
+  border: 2px solid rgb(255, 4, 180);  
   &__container{
     display: flex;
     justify-content: center;
@@ -22,12 +22,19 @@ body{
     justify-content: space-around;
     text-decoration: none;
     color: $font-color-text;
+    
   }
   &__item{
     text-decoration: none;
-    color: $font-color-text;
+    color: $font-color-text; 
+    transition: background 3s ease;
+  }
+  &__item:hover:active{
+    color: red;
+
   }
 }
+
 
 .main{
     background-color: $background-fon; 
@@ -51,7 +58,6 @@ body{
     }
 }
 
-
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -73,4 +79,27 @@ body{
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+.question{
+  display: flex;
+  margin: 0.5vh;
+  &__item{
+    transition: background 3s ease;
+  }
+  &__item:hover:active{
+    color: red;
+  } 
+}
+
+.question{
+  &__faq{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  &__faq-wrapper{
+    display: flex;
+    margin: 0 auto;
+  }
 }
