@@ -2,6 +2,7 @@ $background-fon: black;
 $font-color-text: plum;
 
 body{
+
     margin: 0;
     font-family: 'Bitcount Grid Double'
 }
@@ -92,14 +93,23 @@ body{
   } 
 }
 
-.question{
-  &__faq{
+.question__faq{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
+  margin-left: 5vw;
+  animation: move 3s ease-in-out infinite;
+}
+
+@keyframes move{
+  0% {
+    transform:translateY(0%);
+}
+  50% {
+    transform:translateY(40%);
+    color: red;
   }
-  &__faq-wrapper{
-    display: flex;
-    margin: 0 auto;
+  100%{
+    transform: translateY(0%);
+
   }
 }
