@@ -1,0 +1,39 @@
+$background-fon: black;
+$font-color-text: plum;
+
+.footer{
+    background-color: $background-fon;
+    color: $font-color-text;
+    &__line{
+        display: flex; 
+        flex-direction: row;
+        gap: 2.5vw;
+    }
+    &__line-animation{
+        margin-top: 0;
+        display: flex; 
+        flex-direction: row;
+        animation: moves 10s ease-in-out infinite;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@keyframes moves {
+    0%{
+        transform:translateX(0%);
+    }
+    50%{
+        transform:translateX(75%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+}

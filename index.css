@@ -78,7 +78,7 @@ body {
 }
 .question {
   display: flex;
-  margin: 0.5vh;
+  margin: 0vh;
 }
 .question__item {
   transition: background 3s ease;
@@ -103,6 +103,33 @@ body {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+.footer {
+  background-color: black;
+  color: plum;
+}
+.footer__line {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5vw;
+}
+.footer__line-animation {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  animation: moves 10s ease-in-out infinite;
+}
+
+@keyframes moves {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(75%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 
