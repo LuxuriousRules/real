@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Bitcount Grid Double";
+  background-color: black;
 }
 
 .nav {
@@ -120,6 +121,31 @@ body {
   flex-direction: row;
   animation: moves 10s ease-in-out infinite;
 }
+.footer__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer__kicker,
+.footer .footer__main-text,
+.footer .footer__description {
+  margin-top: 0;
+}
+.footer__description {
+  margin-left: 3vw;
+}
+.footer__btn {
+  font-size: x-large;
+  width: clamp(160px, 25vw, 500px);
+  height: clamp(45px, 5vh, 60px);
+  font-size: x-large;
+  background-color: rgb(61, 61, 61);
+  color: rgb(246, 104, 104);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Bitcount Grid Double";
+}
 
 @keyframes moves {
   0% {
@@ -130,6 +156,37 @@ body {
   }
   100% {
     transform: translateX(0%);
+  }
+}
+.modalWindow {
+  display: none;
+  width: 67%;
+  height: 80%;
+  border: 2px solid pink;
+  background: rgba(111, 111, 111, 0.6);
+  margin-left: 10vw;
+  padding: 5.5vw;
+  margin-top: 2.5vh;
+}
+
+.modalWindow__link {
+  text-decoration: none;
+  font-size: x-large;
+  color: plum;
+  margin-left: 20.5vw;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    color: red;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
